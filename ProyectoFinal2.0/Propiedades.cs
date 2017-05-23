@@ -7,11 +7,25 @@ namespace ProyectoFinal2._0
 {
     public class Propiedades
     {
+        private string tipodpropiedad;
         private string codigodpropiedad;
-        private string metroscuadrados;
+        private int metroscuadrados;
         private string codigopropietario;
-        private string listadegastos;
+        private List <string> listadegastos;
 
+
+        public string Tipodpropiedad
+        {
+            get
+            {
+                return tipodpropiedad;
+            }
+
+            set
+            {
+                tipodpropiedad = value;
+            }
+        }
         public string Codigodpropiedad
         {
             get
@@ -25,7 +39,7 @@ namespace ProyectoFinal2._0
             }
         }
 
-        public string Metroscuadrados
+        public int Metroscuadrados
         {
             get
             {
@@ -51,7 +65,7 @@ namespace ProyectoFinal2._0
             }
         }
 
-        public string Listadegastos
+        public List <string> Listadegastos
         {
             get
             {
@@ -63,5 +77,7 @@ namespace ProyectoFinal2._0
                 listadegastos = value;
             }
         }
+
+        
     }
 }
